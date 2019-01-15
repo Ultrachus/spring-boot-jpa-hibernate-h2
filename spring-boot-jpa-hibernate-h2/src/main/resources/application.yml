@@ -1,0 +1,16 @@
+#Configuración básica del servidor
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+#Configuración básica de logs
+logging:
+  level:
+    ROOT: ERROR
+    org.springframework.web: ERROR
+    com.ultrachus.springboot.rest.example.springbootjpahibernateh2: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: C:\Users\jgomez\Desktop\ProyectosCursos\logs\spring-boot-jpa-hibernate-h2.log
