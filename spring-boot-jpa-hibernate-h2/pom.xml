@@ -16,6 +16,7 @@
 	<description>Learning project with Spring Boot and JPA Hibernate over H2</description>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
 	</properties>
 
