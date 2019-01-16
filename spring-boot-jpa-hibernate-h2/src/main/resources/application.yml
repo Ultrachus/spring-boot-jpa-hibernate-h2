@@ -9,8 +9,23 @@ logging:
   level:
     ROOT: ERROR
     org.springframework.web: ERROR
+    #Activar estadísticas de hibernate
+    org.hibernate.stat: DEBUG
+    org.hibernate.type: TRACE
     com.ultrachus.springboot.rest.example.springbootjpahibernateh2: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
   file: C:\Users\jgomez\Desktop\ProyectosCursos\logs\spring-boot-jpa-hibernate-h2.log
+
+#Configuración para Spring
+spring:
+  #BD embebida  h2:    console:      enabled: true
+  #Activar estadísticas de hibernate
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+    # Show all queries
+        format_sql: true
+    show-sql: true
